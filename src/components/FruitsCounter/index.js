@@ -1,21 +1,21 @@
 // Write your code here
-import {component} from 'react'
+import {compontent} from 'react'
 import './index.css'
 
-class FruitsCounter extends component {
+class FruitsCounter extends compontent {
   state = {mangocount: 0, bananacount: 0}
 
   onIncrement = () => {
     this.setState(prevState => {
       console.log(`previous state value${prevState.count}`)
-      return {count: prevState.mangocount + 1}
+      return {mangocount: prevState.mangocount + 1}
     })
   }
 
   bananaIncrement = () => {
     this.setState(prevState => {
       console.log(`previous state value${prevState.count}`)
-      return {count: prevState.bananacount + 1}
+      return {bananacount: prevState.bananacount + 1}
     })
   }
 
